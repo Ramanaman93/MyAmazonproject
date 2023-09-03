@@ -1,0 +1,26 @@
+<suite name= "Amazon" parallel= "tests" >
+<test name="TestNG" allow-return-values="true">
+<classes>
+<class name="testlayer.LoginTest"  />
+<class name="testlayer.HomeTest" />
+<class name="testlayer.AccountTest" />
+<class name="testlayer.AddressTest" />
+<class name="testlayer.OrderTest" />
+<class name="testlayer.SearchTest" />
+<class name="testlayer.ShoppingcartTest" />
+<class name="testlayer.GuestTest" />
+
+
+
+
+
+
+
+</classes>
+
+
+</test>
+
+
+
+</suite>

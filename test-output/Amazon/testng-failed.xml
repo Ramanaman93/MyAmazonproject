@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Amazon]">
+  <test thread-count="5" parallel="tests" name="TestNG(failed)">
+    <classes>
+      <class name="testlayer.AddressTest">
+        <methods>
+          <include name="AddressfieldTest"/>
+          <include name="excelsheetaddressdata"/>
+          <include name="close"/>
+          <include name="initialsetup"/>
+        </methods>
+      </class> <!-- testlayer.AddressTest -->
+      <class name="testlayer.LoginTest">
+        <methods>
+          <include name="initialsetup"/>
+          <include name="emptypassword"/>
+          <include name="emptyusername"/>
+          <include name="close"/>
+          <include name="validemailAndwrongpassword"/>
+        </methods>
+      </class> <!-- testlayer.LoginTest -->
+      <class name="testlayer.GuestTest">
+        <methods>
+          <include name="close"/>
+          <include name="initialsetup"/>
+          <include name="addingproductTest"/>
+        </methods>
+      </class> <!-- testlayer.GuestTest -->
+      <class name="testlayer.ShoppingcartTest">
+        <methods>
+          <include name="productinfo"/>
+          <include name="close"/>
+          <include name="initialsetup"/>
+        </methods>
+      </class> <!-- testlayer.ShoppingcartTest -->
+      <class name="testlayer.HomeTest">
+        <methods>
+          <include name="signoutTest"/>
+          <include name="yourAccountTest"/>
+          <include name="yourRecommendationsTest"/>
+          <include name="close"/>
+          <include name="initialsetup"/>
+          <include name="yourOrdersTest"/>
+        </methods>
+      </class> <!-- testlayer.HomeTest -->
+      <class name="testlayer.SearchTest">
+        <methods>
+          <include name="descriptionTest"/>
+          <include name="initialsetup"/>
+          <include name="close"/>
+          <include name="catgoryTest"/>
+        </methods>
+      </class> <!-- testlayer.SearchTest -->
+    </classes>
+  </test> <!-- TestNG(failed) -->
+</suite> <!-- Failed suite [Amazon] -->
